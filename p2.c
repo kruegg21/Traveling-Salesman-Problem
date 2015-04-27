@@ -409,21 +409,9 @@ int parse_line_list(
 			char *token;
 			// ERROR CHECK
 			token = strtok(line_list[i], " ");
-			if (token == NULL) {
-				printf("Error: incomplete line\n");
-				return -1;
-			}
 			vertex1 = add_to_vertex_list(token, ptr_num_vertices, vertex_list);
 			token = strtok(NULL, " ");
-			if (token == NULL) {
-				printf("Error: incomplete line\n");
-				return -1;
-			}
 			vertex2 = add_to_vertex_list(token, ptr_num_vertices, vertex_list);	
-			if (token == NULL) {
-				printf("Error: incomplete line\n");
-				return -1;
-			}		
 			token = strtok(NULL, " ");
 			distance = atoi(token);
 			if (distance < 1) {
