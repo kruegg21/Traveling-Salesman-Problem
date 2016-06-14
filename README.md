@@ -1,4 +1,4 @@
-# Traveling-Salesman-Problem
+# Traveling Salesman Problem
 
 Solves the travelling salesman problem for an undirected and complete graph, using a branch-and-bound method to improve the speed. This program is able
 to solve some versions of the problem that are intractable by brute force. Successul with a graph of size 32
